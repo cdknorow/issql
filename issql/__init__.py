@@ -3,7 +3,7 @@ def supported_version():
     return ['postgresql_10', 'postgresql_8.1', 'sql_2003', 'sql_1999', 'sql_92']
 
 
-def is_reserved(word, version="postgresql_10"):
+def reserved(word, version="postgresql_10"):
     """
     list of sql words pulled from http://www.postgresql.org/docs/8.1/sql-keywords-appendix.html
 

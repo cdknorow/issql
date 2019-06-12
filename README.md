@@ -12,15 +12,15 @@ Usage, defaults to PostgreSQL 10
 ```python
 import issql
 
-issql.is_reserved('ALL')
+issql.reserved('ALL')
 >> True
 
-issql.is_reserved('YES') 
+issql.reserved('YES') 
 >> False
 
-issql.is_reserved('ABS') 
+issql.reserved('ABS') 
 >>False
 
-issql.is_reserved('ABS', version='sql_2003') 
+issql.reserved('ABS', version='sql_2003') 
 >>True
 ```
