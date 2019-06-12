@@ -1,8 +1,15 @@
-This is a simple library to check if a string is a reserved keyword in sql. It currently supports keywords from  postgresql_10, 
-postgresql_8.1, sql_2003, sql_1999, sql_92.  Defaults to postgresql_10
+This is a simple library to check if a string is a reserved keyword in sql. 
 
-usage
+It currently supports keywords from
+* postgresql_10, 
+* postgresql_8.1
+* sql_2003
+* sql_1999
+* sql_92.
 
+Usage, defaults to PostgreSQL 10
+
+```python
 import issql
 
 issql.is_reserved('ALL')
@@ -11,10 +18,9 @@ issql.is_reserved('ALL')
 issql.is_reserved('YES') 
 >> False
 
-
 issql.is_reserved('ABS') 
 >>False
 
-
 issql.is_reserved('ABS', version='sql_2003') 
 >>True
+```

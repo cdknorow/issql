@@ -18,5 +18,5 @@ setup(
         'Programming Language :: Python :: 3.7',
         'License :: OSI Approved :: MIT License'
     ],
-    url='https://github.com/cknorow/issql'
+    url='https://github.com/cdknorow/issql'
 )
