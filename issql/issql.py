@@ -29,7 +29,7 @@ def is_reserved(word, version="postgresql_10"):
                           'TO', 'TRAILING', 'TRUE', 'UNION', 'UNIQUE', 'USER', 'USING',
                           'VERBOSE', 'WHEN', 'WHERE']
 
-    if version == 'postgresql_8.1':
+    elif version == 'postgresql_8.1':
         reserved_words = ['ALL', 'ANALYSE', 'ANALYZE', 'AND', 'ANY', 'ARRAY', 'AS', 'ASC',
                           'ASYMMETRIC', 'AUTHORIZATION', 'BETWEEN', 'BINARY', 'BOTH', 'CASE',
                           'CAST', 'CHECK', 'COLLATE', 'COLUMN', 'CONSTRAINT', 'CREATE',
